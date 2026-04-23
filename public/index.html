@@ -130,7 +130,7 @@
         </nav>
     </footer>
 
-    <script src="/module/sgaCrypt.js"></script>
+    <script type="module" src="/public/main.js"></script>
     <script>
         // Navbar Logic
         let lastScroll = 0;
@@ -148,42 +148,7 @@
             lastScroll = currentScroll;
         });
 
-        // Encryption Logic
-        const formEnkripsi = document.getElementById("form-enkripsi");
-        formEnkripsi.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const input = e.target.input.value;
-            const metode = e.target.metode.value;
-            const shift = e.target.shift.value;
-
-            const sgaCrypt = new SGACrypt();
-
-            const result = document.getElementById("result-enkripsi");
-            result.innerHTML = "";
-            const p = document.createElement("p");
-            p.textContent = sgaCrypt.encrypt(input, { method: metode, shift: shift });
-            result.appendChild(p);
-        });
-
-
-        // Decryption Logic
-        const formDekripsi = document.getElementById("form-dekripsi");
-        formDekripsi.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const input = e.target.input.value;
-            const metode = e.target.metode.value;
-            const shift = e.target.shift.value;
-
-            const sgaCrypt = new SGACrypt();
-
-            const result = document.getElementById("result-dekripsi");
-            result.innerHTML = "";
-            const p = document.createElement("p");
-            p.textContent = sgaCrypt.decrypt(input, { method: metode, shift: shift });
-            result.appendChild(p);
-        });
+        
     </script>
 </body>
 </html>
