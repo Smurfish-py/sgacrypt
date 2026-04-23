@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use("/module", express.static("module"));
-app.use("/images", express.static(path.join(__dirname, 'public', 'images')));
+app.use("/public", express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
