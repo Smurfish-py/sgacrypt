@@ -64,6 +64,7 @@ Hasil dekripsi: CONTOH DEKRIPSI MENGGUNAKAN CAESAR CIPHER
 <div align="center">
     Enkripsi
     <img src="/public/images/encryption.png" width="50%">
+    <br />
     Dekripsi
     <img src="/public/images/decryption.png" width="50%">
 </div>
