@@ -62,10 +62,10 @@ Hasil dekripsi: CONTOH DEKRIPSI MENGGUNAKAN CAESAR CIPHER
 
 ### Sebagai Web App
 <div align="center">
-    Enkripsi
+    <p>Enkripsi</p>
     <img src="/public/images/encryption.png" width="50%">
     <br />
-    Dekripsi
+    <p>Dekripsi</p>
     <img src="/public/images/decryption.png" width="50%">
 </div>
 
