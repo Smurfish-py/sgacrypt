@@ -1,0 +1,16 @@
+{
+  "name": "raja-kripto",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "start/web-app": "node ./app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

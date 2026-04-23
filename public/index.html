@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGACrypt</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-base-200 min-h-screen">
+    <header id="navbar" class="navbar fixed bg-base-100/80 left-1/2 top-4 -translate-x-1/2 max-w-[75%] gap-4 px-6 shadow-sm backdrop-blur-sm z-10 rounded-full transition-all duration-500 justify-between">
+        <div class="hidden lg:flex navbar-start gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+
+            <h1 class="text-xl font-semibold">SGACrypt</h1>
+        </div>
+        <div class="navbar-center gap-4 lg:gap-0">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket lg:hidden"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+            <h1 class="text-xl font-semibold lg:hidden">SGACrypt</h1>
+            <ul class="hidden lg:flex menu menu-horizontal">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#dekripsi">Dekripsi</a></li>
+                <li>
+                    <details>
+                        <summary>Tentang Project</summary>
+                        <ul class="bg-base-100 w-50 rounded-t-none p-2">
+                            <li><a href="#tech-stack">Tech Stack </a></li>
+                            <li><a href="">Pengembang</a></li>
+                            <li><a href="">Repository <span class="badge badge-sm badge-neutral">Github</span></a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="#dekripsi" class="btn btn-neutral rounded-full text-neutral-content">Coba Sekarang</a>
+        </div>
+    </header>
+    <main>
+        <div id="beranda" class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl font-bold">Standard Galactic Alphabet Cryptography</h1>
+                    <p class="py-6">Enkripsi pesan anda menggunakan kombinasi Standard Galactic Alphabet dan Algoritma Caesar Cipher</p>
+                    <div class="flex gap-4 justify-center">
+                        <a href="#dekripsi" class="btn btn-neutral btn-outline">Repositori GitHub</a>
+                        <a href="#dekripsi" class="btn btn-neutral">Coba Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dekripsi" class="min-h-screen bg-base-300 p-4 space-y-4">
+            <form id="form-enkripsi">
+                <div class="rounded-box bg-base-200 border-base-300 shadow-sm p-4">
+                    <h1 class="text-4xl font-bold"># Enkripsi</h1>
+                    <div class="divider"></div>
+                    <div class="bg-base-200 w-full h-full grid lg:grid-cols-2">
+                        <div class="p-4">
+                            <h2 class="text-2xl font-semibold">Input</h2>
+                            <textarea name="input" class="input w-full min-h-70 my-2 text-lg" placeholder="Masukkan plaintext disini..." required></textarea>
+
+                            <select name="metode" class="select w-full" required>
+                                <option value="" disabled selected>Pilih Metode</option>
+                                <option value="normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                                    Normal
+                                </option>
+                                <option value="cipher">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-cog-icon lucide-shield-cog"><path d="m10.929 14.467-.383.924"/><path d="M10.929 8.923 10.546 8"/><path d="M13.225 8.923 13.608 8"/><path d="m13.607 15.391-.382-.924"/><path d="m14.849 10.547.923-.383"/><path d="m14.849 12.843.923.383"/><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9.305 10.547-.923-.383"/><path d="m9.305 12.843-.923.383"/><circle cx="12.077" cy="11.695" r="3"/></svg>
+                                    Cipher
+                                </option>
+                            </select>
+                            <input name="shift" class="input w-full my-2" type="number" placeholder="Masukkan shift (1 - 25)" value="0">
+                        </div>
+                        <div class="p-4">
+                            <h2 class="text-2xl font-semibold">Output</h2>
+                            <div id="result-enkripsi" class="input w-full min-h-70 my-2 flex justify-start items-start overflow-x-auto">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider mx-2"></div>
+                    <button class="btn btn-neutral btn-block text-lg">Enkripsi</button>
+                </div>
+            </form>
+            <form id="form-dekripsi" class="">
+                <div class="rounded-box bg-base-200 border-base-300 shadow-sm p-4">
+                    <h1 class="text-4xl font-bold"># Dekripsi</h1>
+                    <div class="divider"></div>
+                    <div class="bg-base-200 w-full h-full grid lg:grid-cols-2">
+                        <div class="p-4">
+                            <h2 class="text-2xl font-semibold">Input</h2>
+                            <textarea name="input" class="input w-full min-h-70 my-2 text-lg" placeholder="Masukkan ciphertext disini..."></textarea>
+
+                            <select name="metode" class="select w-full" required>
+                                <option value="" disabled selected>Pilih Metode</option>
+                                <option value="normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                                    Normal
+                                </option>
+                                <option value="cipher">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-cog-icon lucide-shield-cog"><path d="m10.929 14.467-.383.924"/><path d="M10.929 8.923 10.546 8"/><path d="M13.225 8.923 13.608 8"/><path d="m13.607 15.391-.382-.924"/><path d="m14.849 10.547.923-.383"/><path d="m14.849 12.843.923.383"/><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9.305 10.547-.923-.383"/><path d="m9.305 12.843-.923.383"/><circle cx="12.077" cy="11.695" r="3"/></svg>
+                                    Cipher
+                                </option>
+                            </select>
+                            <input name="shift" class="input w-full my-2" type="number" placeholder="Masukkan shift (1 - 25)" value="0">
+                            
+                        </div>
+                        <div class="p-4">
+                            <h2 class="text-2xl font-semibold">Output</h2>
+                            <div id="result-dekripsi" class="input w-full min-h-70 my-2 flex justify-start items-start overflow-x-auto">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider mx-2"></div>
+                    <button class="btn btn-neutral btn-block text-lg">Dekripsi</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-4">
+        <aside class="grid-flow-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+            <p>Muhamad Rifqi Kurniawan - Sistem Keamanan Jaringan</p>
+        </aside>
+        <nav class="grid-flow-col gap-4 md:replace-self-center md:justify-self-end">
+            <p class="text-semibold">Standard Galactic Alphabet Cryptography</p>
+        </nav>
+    </footer>
+
+    <script src="/module/sgaCrypt.js"></script>
+    <script>
+        // Navbar Logic
+        let lastScroll = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > lastScroll) {
+                navbar.classList.add("-translate-y-32");
+            } else {
+                navbar.classList.remove("-translate-y-32");
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Encryption Logic
+        const formEnkripsi = document.getElementById("form-enkripsi");
+        formEnkripsi.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const input = e.target.input.value;
+            const metode = e.target.metode.value;
+            const shift = e.target.shift.value;
+
+            const sgaCrypt = new SGACrypt();
+
+            const result = document.getElementById("result-enkripsi");
+            result.innerHTML = "";
+            const p = document.createElement("p");
+            p.textContent = sgaCrypt.encrypt(input, { method: metode, shift: shift });
+            result.appendChild(p);
+        });
+
+
+        // Decryption Logic
+        const formDekripsi = document.getElementById("form-dekripsi");
+        formDekripsi.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const input = e.target.input.value;
+            const metode = e.target.metode.value;
+            const shift = e.target.shift.value;
+
+            const sgaCrypt = new SGACrypt();
+
+            const result = document.getElementById("result-dekripsi");
+            result.innerHTML = "";
+            const p = document.createElement("p");
+            p.textContent = sgaCrypt.decrypt(input, { method: metode, shift: shift });
+            result.appendChild(p);
+        });
+    </script>
+</body>
+</html>
