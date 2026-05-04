@@ -82,7 +82,7 @@ npm install
 
 Jalankan program
 ```bash
-# Eksekusi file app.js 
+# Eksekusi file index.js 
 npm run start 
 
 # Menjalankan web-app
